@@ -26,11 +26,12 @@ body{
 #menuContainer{
     display: flex;
     min-height: 85vh;
+    width: 90%;
     
 }
 
 #gunBench{
-    width: 60vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,17 +52,30 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
+    width: 15%;
     background-color: gray;
     border: solid black 3px;
     
 }
 
-#option{
-    max-height: 100px;
+#barrelLength{
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
     background-color: gray;
+    width: 15%;
+    border: solid black 3px;
+   
+}
+
+#option{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
     border: solid black 3px;
     opacity: 1;
 }
@@ -73,21 +87,23 @@ body{
     cursor: pointer;
 }
 
-#option::selection{
+#option:focus-visible {
     border: solid 3px yellow;
-}
-
-#barrelLength{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
     background-color: gray;
-    min-width: 10vw;
-    border: solid black 3px;
-   
 }
+
+
+#opticOpt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    background-color: white;
+    border: solid black 3px;
+}
+
 #myCardContainer{
     display: flex;
     align-items: center;

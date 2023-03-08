@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-const path = require('path')
 
 
 const app = express()
@@ -11,22 +10,18 @@ app.use(cors())
 app.use(express.static(`${__dirname}../../public`))
 
 const {
-    sendM4Opt,
-    sendM16Opt,
-    sendMoeCarOpt,
-    sendMoeOpt,
+    sendBarrelOpt,
     getCards,
     addGun,
+    sendOptics,
     deleteCard
 } = require('./controller')
 
-app.get('/stocks/M4', sendM4Opt)
-app.get('/stocks/M16', sendM16Opt)
-app.get('/stocks/MoeCar', sendMoeCarOpt)
-app.get('/stocks/Moe', sendMoeOpt)
+app.get('/stocks/:stock', sendBarrelOpt)
 app.get('/cards', getCards)
-
+app.get('/:stock/:barrelLength', sendOptics)
 app.post('/guns/add', addGun)
 app.delete('/:id', deleteCard)
-app.listen(5000, console.log(`App running on port 5000!`))
 
+
+app.listen(5000, console.log(`App running on port 5000!`))
