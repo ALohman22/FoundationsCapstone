@@ -61,7 +61,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 90%;
-    min-height: 380px;
     min-width: 700px;
 }
 #gunBenchContainer{
