@@ -3,35 +3,35 @@ const m4_8_Optic = [
         barrelLength: 8,
         stock: "m4",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m4-8-Acog.png",
+        imgMain: "../images/opticComplete/acog/m4-8-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 8,
         stock: "m4",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m4-8-Et.png",
+        imgMain: "../images/opticComplete/et/m4-8-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 8,
         stock: "m4",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m4-8-Et-2.png",
+        imgMain: "../images/opticComplete/et/m4-8-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 8,
         stock: "m4",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m4-8-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m4-8-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 8,
         stock: "m4",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m4-8-Scope.png",
+        imgMain: "../images/opticComplete/scope/m4-8-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -40,35 +40,35 @@ const m4_12_Optic = [
         barrelLength: 12,
         stock: "m4",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m4-12-Acog.png",
+        imgMain: "../images/opticComplete/acog/m4-12-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 12,
         stock: "m4",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m4-12-Et.png",
+        imgMain: "../images/opticComplete/et/m4-12-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 12,
         stock: "m4",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m4-12-Et-2.png",
+        imgMain: "../images/opticComplete/et/m4-12-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 12,
         stock: "m4",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m4-12-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m4-12-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 12,
         stock: "m4",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m4-12-Scope.png",
+        imgMain: "../images/opticComplete/scope/m4-12-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -77,35 +77,35 @@ const m4_14_5_Optic = [
         barrelLength: 14.5,
         stock: "m4",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m4-14.5-Acog.png",
+        imgMain: "../images/opticComplete/acog/m4-14.5-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 14.5,
         stock: "m4",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m4-14.5-Et.png",
+        imgMain: "../images/opticComplete/et/m4-14.5-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 14.5,
         stock: "m4",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m4-14.5-Et-2.png",
+        imgMain: "../images/opticComplete/et/m4-14.5-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 14.5,
         stock: "m4",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m4-14.5-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m4-14.5-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 14.5,
         stock: "m4",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m4-14.5-Scope.png",
+        imgMain: "../images/opticComplete/scope/m4-14.5-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -114,35 +114,35 @@ const m4_16_Optic = [
         barrelLength: 16,
         stock: "m4",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m4-16-Acog.png",
+        imgMain: "../images/opticComplete/acog/m4-16-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 16,
         stock: "m4",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m4-16-Et.png",
+        imgMain: "../images/opticComplete/et/m4-16-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 16,
         stock: "m4",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m4-16-Et-2.png",
+        imgMain: "../images/opticComplete/et/m4-16-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 16,
         stock: "m4",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m4-16-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m4-16-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 16,
         stock: "m4",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m4-16-Scope.png",
+        imgMain: "../images/opticComplete/scope/m4-16-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -151,35 +151,35 @@ const m16_8_Optic = [
         barrelLength: 8,
         stock: "m16",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m16-8-Acog.png",
+        imgMain: "../images/opticComplete/acog/m16-8-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 8,
         stock: "m16",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m16-8-Et.png",
+        imgMain: "../images/opticComplete/et/m16-8-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 8,
         stock: "m16",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m16-8-Et-2.png",
+        imgMain: "../images/opticComplete/et/m16-8-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 8,
         stock: "m16",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m16-8-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m16-8-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 8,
         stock: "m16",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m16-8-Scope.png",
+        imgMain: "../images/opticComplete/scope/m16-8-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -188,35 +188,35 @@ const m16_12_Optic = [
         barrelLength: 12,
         stock: "m16",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m16-12-Acog.png",
+        imgMain: "../images/opticComplete/acog/m16-12-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 12,
         stock: "m16",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m16-12-Et.png",
+        imgMain: "../images/opticComplete/et/m16-12-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 12,
         stock: "m16",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m16-12-Et-2.png",
+        imgMain: "../images/opticComplete/et/m16-12-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 12,
         stock: "m16",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m16-12-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m16-12-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 12,
         stock: "m16",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m16-12-Scope.png",
+        imgMain: "../images/opticComplete/scope/m16-12-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -225,35 +225,35 @@ const m16_14_5_Optic = [
         barrelLength: 14.5,
         stock: "m16",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m16-14.5-Acog.png",
+        imgMain: "../images/opticComplete/acog/m16-14.5-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 14.5,
         stock: "m16",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m16-14.5-Et.png",
+        imgMain: "../images/opticComplete/et/m16-14.5-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 14.5,
         stock: "m16",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m16-14.5-Et-2.png",
+        imgMain: "../images/opticComplete/et/m16-14.5-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 14.5,
         stock: "m16",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m16-14.5-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m16-14.5-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 14.5,
         stock: "m16",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m16-14.5-Scope.png",
+        imgMain: "../images/opticComplete/scope/m16-14.5-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -262,35 +262,35 @@ const m16_16_Optic = [
         barrelLength: 16,
         stock: "m16",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/m16-16-Acog.png",
+        imgMain: "../images/opticComplete/acog/m16-16-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 16,
         stock: "m16",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/m16-16-Et.png",
+        imgMain: "../images/opticComplete/et/m16-16-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 16,
         stock: "m16",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/m16-16-Et-2.png",
+        imgMain: "../images/opticComplete/et/m16-16-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 16,
         stock: "m16",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/m16-16-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/m16-16-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 16,
         stock: "m16",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/m16-16-Scope.png",
+        imgMain: "../images/opticComplete/scope/m16-16-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -299,35 +299,35 @@ const moe_8_Optic = [
         barrelLength: 8,
         stock: "moe",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moe-8-Acog.png",
+        imgMain: "../images/opticComplete/acog/moe-8-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 8,
         stock: "moe",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moe-8-Et.png",
+        imgMain: "../images/opticComplete/et/moe-8-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 8,
         stock: "moe",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moe-8-Et-2.png",
+        imgMain: "../images/opticComplete/et/moe-8-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 8,
         stock: "moe",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moe-8-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moe-8-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 8,
         stock: "moe",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moe-8-Scope.png",
+        imgMain: "../images/opticComplete/scope/moe-8-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -336,35 +336,35 @@ const moe_12_Optic = [
         barrelLength: 12,
         stock: "moe",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moe-12-Acog.png",
+        imgMain: "../images/opticComplete/acog/moe-12-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 12,
         stock: "moe",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moe-12-Et.png",
+        imgMain: "../images/opticComplete/et/moe-12-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 12,
         stock: "moe",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moe-12-Et-2.png",
+        imgMain: "../images/opticComplete/et/moe-12-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 12,
         stock: "moe",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moe-12-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moe-12-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 12,
         stock: "moe",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moe-12-Scope.png",
+        imgMain: "../images/opticComplete/scope/moe-12-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -373,35 +373,35 @@ const moe_14_5_Optic = [
         barrelLength: 14.5,
         stock: "moe",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moe-14.5-Acog.png",
+        imgMain: "../images/opticComplete/acog/moe-14.5-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 14.5,
         stock: "moe",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moe-14.5-Et.png",
+        imgMain: "../images/opticComplete/et/moe-14.5-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 14.5,
         stock: "moe",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moe-14.5-Et-2.png",
+        imgMain: "../images/opticComplete/et/moe-14.5-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 14.5,
         stock: "moe",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moe-14.5-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moe-14.5-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 14.5,
         stock: "moe",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moe-14.5-Scope.png",
+        imgMain: "../images/opticComplete/scope/moe-14.5-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -410,35 +410,35 @@ const moe_16_Optic = [
         barrelLength: 16,
         stock: "moe",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moe-16-Acog.png",
+        imgMain: "../images/opticComplete/acog/moe-16-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 16,
         stock: "moe",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moe-16-Et.png",
+        imgMain: "../images/opticComplete/et/moe-16-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 16,
         stock: "moe",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moe-16-Et-2.png",
+        imgMain: "../images/opticComplete/et/moe-16-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 16,
         stock: "moe",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moe-16-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moe-16-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 16,
         stock: "moe",
         optic: 'Scope',
-        imgMain: "../images/moe-16-Scope.png",
+        imgMain: "../images/opticComplete/scope/moe-16-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -447,35 +447,35 @@ const moeCar_8_Optic = [
         barrelLength: 8,
         stock: "moeCar",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moeCar-8-Acog.png",
+        imgMain: "../images/opticComplete/acog/moeCar-8-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 8,
         stock: "moeCar",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moeCar-8-Et.png",
+        imgMain: "../images/opticComplete/et/moeCar-8-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 8,
         stock: "moeCar",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moeCar-8-Et-2.png",
+        imgMain: "../images/opticComplete/et/moeCar-8-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 8,
         stock: "moeCar",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moeCar-8-Lpvo.png",
-        imgIcon: "../imagesicons//LPVO.png"
+        imgMain: "../images/opticComplete/lpvo/moeCar-8-Lpvo.png",
+        imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 8,
         stock: "moeCar",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moeCar-8-Scope.png",
+        imgMain: "../images/opticComplete/scope/moeCar-8-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -484,35 +484,35 @@ const moeCar_12_Optic = [
         barrelLength: 12,
         stock: "moeCar",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moeCar-12-Acog.png",
+        imgMain: "../images/opticComplete/acog/moeCar-12-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 12,
         stock: "moeCar",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moeCar-12-Et.png",
+        imgMain: "../images/opticComplete/et/moeCar-12-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 12,
         stock: "moeCar",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moeCar-12-Et-2.png",
+        imgMain: "../images/opticComplete/et/moeCar-12-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 12,
         stock: "moeCar",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moeCar-12-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moeCar-12-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 12,
         stock: "moeCar",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moeCar-12-Scope.png",
+        imgMain: "../images/opticComplete/scope/moeCar-12-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -521,35 +521,35 @@ const moeCar_14_5_Optic = [
         barrelLength: 14.5,
         stock: "Car",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moeCar-14.5-Acog.png",
+        imgMain: "../images/opticComplete/acog/moeCar-14.5-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 14.5,
         stock: "moeCar",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moeCar-14.5-Et.png",
+        imgMain: "../images/opticComplete/et/moeCar-14.5-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 14.5,
         stock: "moeCar",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moeCar-14.5-Et-2.png",
+        imgMain: "../images/opticComplete/et/moeCar-14.5-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 14.5,
         stock: "moeCar",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moeCar-14.5-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moeCar-14.5-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 14.5,
         stock: "moeCar",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moeCar-14.5-Scope.png",
+        imgMain: "../images/opticComplete/scope/moeCar-14.5-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -558,35 +558,35 @@ const moeCar_16_Optic = [
         barrelLength: 16,
         stock: "moeCar",
         optic: 'ACOG',
-        imgMain: "../images/opticComplete/moeCar-16-Acog.png",
+        imgMain: "../images/opticComplete/acog/moeCar-16-Acog.png",
         imgIcon: "../images/icons/ACOG-rd.png"
     },  
     {
         barrelLength: 16,
         stock: "moeCar",
         optic: 'EOTECH EXP',
-        imgMain: "../images/opticComplete/moeCar-16-Et.png",
+        imgMain: "../images/opticComplete/et/moeCar-16-Et.png",
         imgIcon: "../images/icons/EOTECH-EXPS3.png"
     }, 
     {
         barrelLength: 16,
         stock: "moeCar",
         optic: 'EOTECH HWS',
-        imgMain: "../images/opticComplete/moeCar-16-Et-2.png",
+        imgMain: "../images/opticComplete/et/moeCar-16-Et-2.png",
         imgIcon: "../images/icons/EOTECH-HWS-518.png"
     },
     {
         barrelLength: 16,
         stock: "moeCar",
         optic: 'LPVO',
-        imgMain: "../images/opticComplete/moeCar-16-Lpvo.png",
+        imgMain: "../images/opticComplete/lpvo/moeCar-16-Lpvo.png",
         imgIcon: "../images/icons/LPVO.png"
     },
     {
         barrelLength: 16,
         stock: "moeCar",
         optic: 'Scope',
-        imgMain: "../images/opticComplete/moeCar-16-Scope.png",
+        imgMain: "../images/opticComplete/scope/moeCar-16-Scope.png",
         imgIcon: "../images/icons/scope11.png"
     }
 ]
@@ -720,7 +720,111 @@ const moeOpt = [
     }
 ]
 
-const myRifles = []
+const myRifles = [{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'ACOG',
+    imgMain: "../images/opticComplete/acog/m4-8-Acog.png",
+    imgIcon: "../images/icons/ACOG-rd.png"
+},  
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH EXP',
+    imgMain: "../images/opticComplete/et/m4-8-Et.png",
+    imgIcon: "../images/icons/EOTECH-EXPS3.png"
+}, 
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH HWS',
+    imgMain: "../images/opticComplete/et/m4-8-Et-2.png",
+    imgIcon: "../images/icons/EOTECH-HWS-518.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'LPVO',
+    imgMain: "../images/opticComplete/lpvo/m4-8-Lpvo.png",
+    imgIcon: "../images/icons/LPVO.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'Scope',
+    imgMain: "../images/opticComplete/scope/m4-8-Scope.png",
+    imgIcon: "../images/icons/scope11.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'ACOG',
+    imgMain: "../images/opticComplete/acog/m4-8-Acog.png",
+    imgIcon: "../images/icons/ACOG-rd.png"
+},  
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH EXP',
+    imgMain: "../images/opticComplete/et/m4-8-Et.png",
+    imgIcon: "../images/icons/EOTECH-EXPS3.png"
+}, 
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH HWS',
+    imgMain: "../images/opticComplete/et/m4-8-Et-2.png",
+    imgIcon: "../images/icons/EOTECH-HWS-518.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'LPVO',
+    imgMain: "../images/opticComplete/lpvo/m4-8-Lpvo.png",
+    imgIcon: "../images/icons/LPVO.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'Scope',
+    imgMain: "../images/opticComplete/scope/m4-8-Scope.png",
+    imgIcon: "../images/icons/scope11.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'ACOG',
+    imgMain: "../images/opticComplete/acog/m4-8-Acog.png",
+    imgIcon: "../images/icons/ACOG-rd.png"
+},  
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH EXP',
+    imgMain: "../images/opticComplete/et/m4-8-Et.png",
+    imgIcon: "../images/icons/EOTECH-EXPS3.png"
+}, 
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'EOTECH HWS',
+    imgMain: "../images/opticComplete/et/m4-8-Et-2.png",
+    imgIcon: "../images/icons/EOTECH-HWS-518.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'LPVO',
+    imgMain: "../images/opticComplete/lpvo/m4-8-Lpvo.png",
+    imgIcon: "../images/icons/LPVO.png"
+},
+{
+    barrelLength: 8,
+    stock: "m4",
+    optic: 'Scope',
+    imgMain: "../images/opticComplete/scope/m4-8-Scope.png",
+    imgIcon: "../images/icons/scope11.png"
+}]
 gunId = 5
 
 module.exports = {

@@ -1,80 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
+    height: 170vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(158, 132, 121);
+    justify-content: space-between;
+    background-color: rgb(11, 0, 61);
+    border-left: solid black 20px;
+    border-right: solid black 20px;
+    background-image: url("https://media.istockphoto.com/id/157443820/photo/pegboard.jpg?s=612x612&w=0&k=20&c=NIAzEOLWAzJR1Rz02pzrkX7UYh3yR9gXUzP6d3qyWyU=");
 }
 
 #title{
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    border: solid rgb(216, 216, 216) 5px;
+    padding: 10px;
+    margin: 10px;
 }
 
 #submitGun{
-    height: 50px;
-    width: 90%;
+    height: 40px;
+    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: gray;
+    border: solid black 3px;
 }
 
 #subBtn{
     height: 75%;
+    opacity: 1;
+    border: solid black 1px;
+    padding: 3px;
+    visibility: hidden;
+}
+
+#subBtn:hover{
+    opacity: .2;
+    border: solid black 3px;
 }
 
 #menuContainer{
     display: flex;
-    min-height: 85vh;
-    width: 90%;
-    
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
 }
 
-#gunBench{
-    width: 70%;
+#mainContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    min-width: 700px;
+}
+#gunBenchContainer{
+    display: grid;
+    width: 60%;
+}
+
+#gunBench{
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     color: whitesmoke;
+    max-height: 100%;
     background-color: rgb(32, 32, 32);
+    z-index: 1;
+}
+
+#input1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    visibility: hidden;
+}
+
+#input1, #gunBench{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#optCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#display{
+   width: 100%; 
 }
 
 #inputCard{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: gray;
+    height: 100px;
+    opacity: .8;
+    z-index: 2;
+    border: solid black 3px;
 }
+
+
 
 #stockOpt{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
-    width: 15%;
     background-color: gray;
     border: solid black 3px;
     
 }
 
 #barrelLength{
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
+    min-width: 155px;
     background-color: gray;
-    width: 15%;
     border: solid black 3px;
    
 }
 
+#barCard{
+    max-height: 100px;
+    max-width: 155px;
+}
+
 #option{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    max-width: 150px;
+    max-height: 100px;
     background-color: white;
     border: solid black 3px;
     opacity: 1;
@@ -98,31 +182,94 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
-    width: 90%;
-    background-color: white;
+    flex-wrap: wrap;
+    min-height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: gray;
     border: solid black 3px;
 }
 
-#myCardContainer{
+#cardCollection{
+    height: 100%;
+    width: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80vw;
 }
 
+h2{
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(37, 37, 37);
+    border: solid rgb(216, 216, 216) 3px;
+    padding: 3px;
+    
+}
+#slide-wrapper{
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#myCardContainer{
+   width: 100%;
+   display: flex;
+   grid-column: 1;
+    grid-row: 1;
+   align-items: center;
+   flex-wrap: nowrap;
+   overflow-x: hidden;
+   /* overflow-y:visible;
+   border: 5px solid black; */
+}
+
+#outlineContainer{
+    display: grid;
+    height: 100%;
+    width: 1015px;
+    z-index: 1;
+}
+
+/* #outline{
+    margin: 0px;
+    position: relative;
+    top: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    border: solid black 3px;
+    height: 75%;
+    width: 100%;
+    z-index: 0;
+} */
 
 .gunCard{
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: space-between;
     padding: 5px;
+    margin: 10px;
     background-color: rgb(54, 54, 54);
     border: 5px solid black;
     color: whitesmoke;
+    height: 250px;
+    scroll-behavior: smooth;
+    transition-duration: .2s;
     
+}
+.gunCard #gunName{
+    text-align: center;
+    margin: 3px;
+    border: solid lightgrey 1px;
+}
+
+.gunCard #barrel, #stock, #id{
+    margin: 3px;
+    border-bottom: solid lightgrey 1px;
 }
 
 #cardImg{
@@ -139,4 +286,27 @@ body{
     border: solid black 3px;
     text-align: center;
     visibility: hidden;
+}
+
+.arrow{
+    height: 30px;
+    margin: 10px;
+    border:  solid black 1px;
+    border-radius: 50%;
+    scroll-behavior: smooth;
+    transition-duration: 4s;
+}
+.arrow:hover{
+    opacity: .8;
+    transition: .2s ease-in-out;
+    border:  solid black 2px;
+    cursor: pointer;
+}
+
+.active{
+    height: 40vh;
+    margin-left: 20px;
+    margin-left: 20px;
+    scroll-behavior: smooth;
+    transition-duration: .5s;
 }

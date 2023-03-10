@@ -1,16 +1,20 @@
 
 
+
 const opticOpt = document.getElementById('opticOpt')
 const gunBench = document.getElementById('gunBench')
-const myCardContainer = document.querySelector('ul')
+const myCardContainer = document.querySelector('#myCardContainer')
 const submitBtn = document.querySelector('#subBtn')
 const barrel = document.querySelector('#barrelLength')
+const mainCard = document.querySelector('#mainCard')
+const input1 = document.getElementById('input1')
 
 
 let curGunObj = {}
 
 const barrelOpt = (stock) => {
     gunBench.innerHTML = ''
+    input1.innerHTML = ''
     axios.get(`http://localhost:5000/stocks/${stock}`)
     .then(response => {
         barrel.innerHTML = ''
@@ -24,7 +28,7 @@ const barrelOpt = (stock) => {
 const barrelCards = (barrelObj) => {
     let {imgIcon, stock, barrelLength, imgMain, optic } = barrelObj
     let barCard = document.createElement('div')
-
+    barCard.setAttribute("id", 'barCard')
     barCard.innerHTML = `
     <img id='option' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
     `
@@ -37,9 +41,12 @@ const displayFirstImg = (imgMain) => {
 
 const displayOptics = (barrelLength, stock, optic, imgMain) => {
     gunBench.innerHTML = ''
+    input1.innerHTML = ''
+    submitBtn.style.visibility = 'visible'
     let mainCard = document.createElement('div')
+    mainCard.setAttribute("id", "mainCard")
     mainCard.innerHTML = `
-    <img id='display' src="${imgMain}" alt="myGun" style="width: 100%;">
+    <img id='display' src="${imgMain}" alt="myGun">
     `
     gunBench.appendChild(mainCard)
 
@@ -54,6 +61,7 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
     axios.get(`http://localhost:5000/${stock}/${barrelLength}`)
     .then(response=>{
         opticOpt.innerHTML = ''
+        
         let optArr = response.data
         for(let i = 0; i < optArr.length; i++){
             opticCards(optArr[i])
@@ -63,8 +71,8 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
 
 const opticCards = (optObj) => {
     let {imgMain, stock, barrelLength, optic, imgIcon} = optObj
-    let optCard = document.createElement('div')
-
+    let optCard = document.createElement('section')
+    
     optCard.innerHTML = `
     <img id='option' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
     `
@@ -74,10 +82,13 @@ const opticCards = (optObj) => {
 
 const displayImg = (barrelLength, stock, optic, imgMain) => {
     gunBench.innerHTML = ''
+    input1.innerHTML = ''
+    input1.style.visibility = 'hidden'
+    submitBtn.style.visibility = 'visible'
     let mainCard = document.createElement('div')
-
+    mainCard.setAttribute("id", "mainCard")
     mainCard.innerHTML = `
-    <img id='display' src="${imgMain}" alt="myGun" style="width: 100%;">
+    <img id='display' src="${imgMain}" alt="myGun">
     `
     gunBench.appendChild(mainCard)
 
@@ -94,7 +105,8 @@ const displayImg = (barrelLength, stock, optic, imgMain) => {
 const createCard = gun => {
     let myCard = document.createElement('li')
     myCard.classList.add('gunCard')
-
+    myCard.addEventListener('mouseover', ()=> myCard.classList.add('active'))
+    myCard.addEventListener('mouseout', ()=> myCard.classList.remove('active'))
     myCard.innerHTML= `
     <p id="gunName">${gun.name}</p>
     <img id='cardImg' src='${gun.imgMain}'></img>
@@ -137,24 +149,53 @@ const addCard = gunObj => {
 
 
 const submitHandler = evt => {
+
+    input1.style.visibility = 'visible'
+    input1.innerHTML = ''
     let inputCard = document.createElement('section')
     inputCard.setAttribute('id', 'inputCard')
     inputCard.innerHTML = `<p>Name your rifle</p>
-            <input type="text" placeholder="Name..." id="nameIn">
-            <button id="subObj" onclick="addGun()">Submit</button>`
-    gunBench.insertBefore(inputCard, gunBench.firstChild)
+    <input type="text" placeholder="Name..." id="nameIn">
+    <button id="subObj" onclick="addGun()">Submit</button>
+    <button id="cancel" onclick="cancelInput()">Cancel</button>`
+    input1.appendChild(inputCard)
 }
 
+const cancelInput = evt => input1.style.visibility = 'hidden';
+
 const addGun = evt => {
-    
+    submitBtn.style.visibility = "hidden"
     let name = document.querySelector('#nameIn') 
         curGunObj.name = name.value
-
-        addCard(curGunObj)
+    if(curGunObj.name === ''){
+        alert("Please enter a name")
+    } else { addCard(curGunObj)
 
         name.value = ''
         inputCard.innerHTML = ''
+        input1.style.visibility = 'hidden'
+    }
 }
+
+const btnLeft = document.querySelector('#left')
+const btnRight = document.querySelector('#right')
+
+btnLeft.addEventListener('click', function(){
+    document.getElementById('myCardContainer').scrollLeft -= 255
+    
+});
+btnRight.addEventListener('click', function(){
+    document.getElementById('myCardContainer').scrollLeft += 255
+    
+});
+
+
+
+
+
+
+
+
 
 submitBtn.addEventListener('click', submitHandler)
 

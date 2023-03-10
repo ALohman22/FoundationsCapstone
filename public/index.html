@@ -8,42 +8,64 @@
     <title>Gun Builder</title>
 </head>
 <body>
-    <header id="title">Build Your Rifle</header>
+    <div id="mainContainer">
+        <header id="title">Build Your Rifle</header>
 
+       
+            <div id="submitGun">
+                <button id="subBtn">Submit</button>
+            </div>
+       
+        <div id="menuContainer">
 
-    <div id="submitGun">
-        <button id="subBtn">Submit</button>
-    </div>
-<div id="menuContainer">
-
-    <div id="stockOpt">
-
-        <img id='option' name="m4" onclick="barrelOpt(`${name}`)" src="../images/lower-m4.jpg"  alt="">
-        <img id='option' name="m16" onclick="barrelOpt(`${name}`)" src="../images/lower-m16.jpg"  alt="">
-        <img id='option' name="moeCar" onclick="barrelOpt(`${name}`)" src="../images/lower-moe-carb.jpg"  alt="">
-        <img id='option' name="moe" onclick="barrelOpt(`${name}`)" src="../images/lower-moe.jpg"  alt="">
-
-    </div>
-
-    <div id="gunBench">
-        
-    </div>
     
-    <div id="barrelLength">
+            <div id="stockOpt">
+                <img id='option' name="m4" onclick="barrelOpt(`${name}`)" src="../images/icons/lower-m4.jpg" alt="">
+                <img id='option' name="m16" onclick="barrelOpt(`${name}`)" src="../images/icons/lower-m16.jpg"  alt="">
+                <img id='option' name="moeCar" onclick="barrelOpt(`${name}`)" src="../images/icons/lower-moe-carb.jpg"  alt="">
+                <img id='option' name="moe" onclick="barrelOpt(`${name}`)" src="../images/icons/lower-moe.jpg"  alt="">
+            </div>
+
+            <section id="gunBenchContainer">
+                <section id="input1"></section>
+                <div id="gunBench"></div>
+            </section>
+    
+            <div id="barrelLength">
         
+    
+            </div>
+
+
+        </div>
+            <div id="opticOpt">
+
+        
+            </div>
     </div>
 
-</div>
-    <div id="opticOpt">
-
-        
-    </div>
-
-<ul id="myCardContainer">
+    <section id="cardCollection">
 
 
-</ul>
+        <h2>My Rifles</h2>
 
+        <div id="slide-wrapper">
+
+            <img src="./images/icons/arrowL.png" id="left" class="arrow"></img>
+            
+            <div id="outlineContainer">
+                <div id="myCardContainer">
+
+                </div>
+                <section id="outline"></section>
+            </div>
+            
+            <img src="./images/icons/arrowR.png" id="right"class="arrow" ></img>
+
+        </div>
+
+
+    </section>    
 
 
 
