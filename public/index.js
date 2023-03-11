@@ -111,7 +111,9 @@ const createCard = gun => {
     myCard.addEventListener('mouseout', ()=> myCard.classList.remove('active'))
     myCard.innerHTML= `
     <p id="gunName">${gun.name}</p>
-    <img id='cardImg' src='${gun.imgMain}'></img>
+    <div id="imgCon">
+        <img id='cardImg' src='${gun.imgMain}'></img>
+    </div>
     <p id='barrel'>Barrel Length: ${gun.barrelLength} inches</p>
     <p id='stock'>Stock Type: ${gun.stock}</p>
     <p id='id'>Weapon ID: ${gun.id}</p>
