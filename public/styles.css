@@ -281,7 +281,7 @@ h2{
     border: 5px solid black;
     color: whitesmoke;
     
-    max-width: 200px;
+    width: 200px;
     scroll-behavior: smooth;
     transition-duration: .2s;
     
