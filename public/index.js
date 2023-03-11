@@ -17,7 +17,7 @@ let curGunObj = {}
 const barrelOpt = (stock) => {
     gunBench.innerHTML = ''
     input1.innerHTML = ''
-    axios.get(`http://localhost:5000/stocks/${stock}`)
+    axios.get(`/stocks/${stock}`)
     .then(response => {
         barrel.innerHTML = ''
         let gunOptArr = response.data
@@ -60,7 +60,7 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
         stock
     }
     
-    axios.get(`http://localhost:5000/${stock}/${barrelLength}`)
+    axios.get(`/${stock}/${barrelLength}`)
     .then(response=>{
         opticOpt.innerHTML = ''
         
@@ -121,7 +121,7 @@ const createCard = gun => {
 }
 
 const pullCards = () => {
-    axios.get('http://localhost:5000/cards')
+    axios.get('/cards')
     .then(response => {
         myCardContainer.innerHTML = ''
         console.log(response.data)
@@ -132,14 +132,14 @@ const pullCards = () => {
 }
 
 const deleteCard = id => {
-    axios.delete(`http://localhost:5000/${id}`)
+    axios.delete(`/${id}`)
     .then(response => {
         pullCards(response.data)
     }).catch(err => console.log(err))
 }
 
 const addCard = gunObj => {
-    axios.post(`http://localhost:5000/guns/add`, gunObj)
+    axios.post(`/guns/add`, gunObj)
     .then(response => {
         myCardContainer.innerHTML = ''
         
