@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    height: 170vh;
+    /* height: 170vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 90%;
-    min-width: 700px;
+    /* min-width: 700px; */
 }
 #gunBenchContainer{
     display: grid;
@@ -69,7 +69,7 @@ body{
 }
 
 #gunBench{
-    min-width: 300px;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -135,6 +135,7 @@ body{
     align-items: center;
     padding: 10px;
     min-height: 380px;
+    width: 20%;
     background-color: gray;
     border: solid black 3px;
     
@@ -146,21 +147,40 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
-    min-width: 155px;
+    width: 20%;
     min-height: 380px;
     background-color: gray;
     border: solid black 3px;
    
 }
 
+
 #barCard{
     max-height: 100px;
     max-width: 155px;
+    
+    width: 90%
 }
 
-#option{
-    max-width: 150px;
-    max-height: 100px;
+.option{
+    max-height: 20%;
+    max-width: 90%;
+    background-color: white;
+    border: solid black 3px;
+    opacity: 1;
+}
+
+.option1{
+    width: 100%;
+    background-color: white;
+    border: solid black 3px;
+    opacity: 1;
+}
+
+.option2{
+    
+    max-width: 18vw;
+    margin: 5px;
     background-color: white;
     border: solid black 3px;
     opacity: 1;

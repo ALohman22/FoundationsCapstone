@@ -1,5 +1,6 @@
 
 
+const body = document.querySelector('body')
 
 const opticOpt = document.getElementById('opticOpt')
 const gunBench = document.getElementById('gunBench')
@@ -8,6 +9,7 @@ const submitBtn = document.querySelector('#subBtn')
 const barrel = document.querySelector('#barrelLength')
 const mainCard = document.querySelector('#mainCard')
 const input1 = document.getElementById('input1')
+const img = document.querySelectorAll('.option') 
 
 
 let curGunObj = {}
@@ -15,7 +17,7 @@ let curGunObj = {}
 const barrelOpt = (stock) => {
     gunBench.innerHTML = ''
     input1.innerHTML = ''
-    axios.get(`/stocks/${stock}`)
+    axios.get(`http://localhost:5000/stocks/${stock}`)
     .then(response => {
         barrel.innerHTML = ''
         let gunOptArr = response.data
@@ -30,13 +32,13 @@ const barrelCards = (barrelObj) => {
     let barCard = document.createElement('div')
     barCard.setAttribute("id", 'barCard')
     barCard.innerHTML = `
-    <img id='option' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
+    <img class='option1' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
     `
     barrel.appendChild(barCard)
 }
 const displayFirstImg = (imgMain) => {
     
-
+    
 }
 
 const displayOptics = (barrelLength, stock, optic, imgMain) => {
@@ -49,7 +51,7 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
     <img id='display' src="${imgMain}" alt="myGun">
     `
     gunBench.appendChild(mainCard)
-
+    
     curGunObj = {
         name: '',
         imgMain,
@@ -57,8 +59,8 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
         optic,
         stock
     }
-
-    axios.get(`/${stock}/${barrelLength}`)
+    
+    axios.get(`http://localhost:5000/${stock}/${barrelLength}`)
     .then(response=>{
         opticOpt.innerHTML = ''
         
@@ -74,7 +76,7 @@ const opticCards = (optObj) => {
     let optCard = document.createElement('section')
     
     optCard.innerHTML = `
-    <img id='option' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
+    <img class='option2' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
     `
     opticOpt.appendChild(optCard)
 
@@ -91,7 +93,7 @@ const displayImg = (barrelLength, stock, optic, imgMain) => {
     <img id='display' src="${imgMain}" alt="myGun">
     `
     gunBench.appendChild(mainCard)
-
+    
     curGunObj = {
         name: '',
         imgMain,
@@ -119,7 +121,7 @@ const createCard = gun => {
 }
 
 const pullCards = () => {
-    axios.get('/cards')
+    axios.get('http://localhost:5000/cards')
     .then(response => {
         myCardContainer.innerHTML = ''
         console.log(response.data)
@@ -130,26 +132,26 @@ const pullCards = () => {
 }
 
 const deleteCard = id => {
-    axios.delete(`/${id}`)
+    axios.delete(`http://localhost:5000/${id}`)
     .then(response => {
-    pullCards(response.data)
+        pullCards(response.data)
     }).catch(err => console.log(err))
 }
 
 const addCard = gunObj => {
-    axios.post(`/guns/add`, gunObj)
+    axios.post(`http://localhost:5000/guns/add`, gunObj)
     .then(response => {
         myCardContainer.innerHTML = ''
-    
+        
         for(let i = 0; i < response.data.length; i++){
             createCard(response.data[i])
-    }
+        }
     }).catch(err => console.log(err))
 }
 
 
 const submitHandler = evt => {
-
+    
     input1.style.visibility = 'visible'
     input1.innerHTML = ''
     let inputCard = document.createElement('section')
@@ -166,11 +168,11 @@ const cancelInput = evt => input1.style.visibility = 'hidden';
 const addGun = evt => {
     submitBtn.style.visibility = "hidden"
     let name = document.querySelector('#nameIn') 
-        curGunObj.name = name.value
+    curGunObj.name = name.value
     if(curGunObj.name === ''){
         alert("Please enter a name")
     } else { addCard(curGunObj)
-
+        
         name.value = ''
         inputCard.innerHTML = ''
         input1.style.visibility = 'hidden'
@@ -189,14 +191,17 @@ btnRight.addEventListener('click', function(){
     
 });
 
-
-
-
-
-
-
-
+// const rotate = () => {    
+//     for(let i = 0; i < img.length; i++){
+//         if(window.innerWidth <= 600){
+//             img[i].setAttribute('style', 'transform: rotate(-90deg);')
+//         } else if(window.innerWidth > 600){
+//             img[i].setAttribute('style', 'transform: none;')
+//         }
+//     }
+// }
 
 submitBtn.addEventListener('click', submitHandler)
 
+// rotate()
 pullCards()
