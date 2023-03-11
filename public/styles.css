@@ -282,6 +282,7 @@ h2{
     color: whitesmoke;
     
     width: 200px;
+    min-width: 200px;
     scroll-behavior: smooth;
     transition-duration: .2s;
     
