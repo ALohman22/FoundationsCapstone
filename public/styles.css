@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: black
+    background-color: black;
     border-left: solid black 20px;
     border-right: solid black 20px;
     background-image: url("https://media.istockphoto.com/id/157443820/photo/pegboard.jpg?s=612x612&w=0&k=20&c=NIAzEOLWAzJR1Rz02pzrkX7UYh3yR9gXUzP6d3qyWyU=");
@@ -51,6 +51,7 @@ body{
 #menuContainer{
     display: flex;
     justify-content: center;
+    min-height: 380px;
     height: 60vh;
     width: 100%;
 }
@@ -134,7 +135,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
-    min-height: 380px;
+    /* min-height: 380px; */
     width: 15%;
     background-color: gray;
     border: solid black 3px;
@@ -148,7 +149,7 @@ body{
     align-items: center;
     padding: 10px;
     width: 15%;
-    min-height: 380px;
+    /* min-height: 380px; */
     background-color: gray;
     border: solid black 3px;
    
