@@ -280,7 +280,8 @@ h2{
     background-color: rgb(54, 54, 54);
     border: 5px solid black;
     color: whitesmoke;
-    height: 280px;
+    
+    max-width: 200px;
     scroll-behavior: smooth;
     transition-duration: .2s;
     
@@ -301,7 +302,7 @@ h2{
     align-items: center;
     justify-content: center;
     
-    height: 80%;
+    width: 100%;
 }
 
 #cardImg{
