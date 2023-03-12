@@ -62,6 +62,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 90%;
+    margin-bottom: 5vh;
     /* min-width: 700px; */
 }
 #gunBenchContainer{
@@ -217,6 +218,7 @@ body{
 
 #cardCollection{
     height: 100%;
+    min-height: 400px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -235,26 +237,28 @@ h2{
 #slide-wrapper{
     width: 100%;
     display: flex;
-    height: 50vh;
+   
     align-items: center;
     justify-content: center;
+    overflow-y: visible;
 }
 
 #myCardContainer{
    width: 100%;
+   height: 400px;
    display: flex;
    grid-column: 1;
     grid-row: 1;
    align-items: center;
+   justify-content: center;
    flex-wrap: nowrap;
    overflow-x: hidden;
-   /* overflow-y:visible;
-   border: 5px solid black; */
+   
 }
 
 #outlineContainer{
     display: grid;
-    height: 100%;
+
     width: 1015px;
     z-index: 1;
 }
@@ -271,6 +275,7 @@ h2{
     z-index: 0;
 } */
 
+
 .gunCard{
     display: flex;
     flex-direction: column;
@@ -281,22 +286,24 @@ h2{
     background-color: rgb(54, 54, 54);
     border: 5px solid black;
     color: whitesmoke;
-    
-    width: 200px;
+    height: 70%;
+    width: 250px;
     min-width: 200px;
     scroll-behavior: smooth;
     transition-duration: .2s;
-    
+ 
 }
-.gunCard #gunName{
+
+#gunName{
     text-align: center;
-    margin: 3px;
     border: solid lightgrey 1px;
 }
 
-.gunCard #barrel, #stock, #id{
-    margin: 3px;
+
+#barrel, #stock, #id{
+    margin: 3px; 
     border-bottom: solid lightgrey 1px;
+    
 }
 
 #imgCon{
@@ -304,13 +311,12 @@ h2{
     align-items: center;
     justify-content: center;
     
-    width: 100%;
 }
 
 #cardImg{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     background-color: whitesmoke;
 }
 
@@ -339,7 +345,7 @@ h2{
 }
 
 .active{
-    height: 40vh;
+    height: 80%;
     margin-left: 20px;
     margin-left: 20px;
     scroll-behavior: smooth;

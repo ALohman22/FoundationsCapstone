@@ -105,19 +105,20 @@ const displayImg = (barrelLength, stock, optic, imgMain) => {
 
 
 const createCard = gun => {
-    let myCard = document.createElement('li')
+    let myCard = document.createElement('div')
     myCard.classList.add('gunCard')
-    myCard.addEventListener('mouseover', ()=> myCard.classList.add('active'))
-    myCard.addEventListener('mouseout', ()=> myCard.classList.remove('active'))
+    myCard.addEventListener('mouseover', ()=> myCard.style.height = "90%")
+    myCard.addEventListener('mouseout', ()=> myCard.style.height = "80%")
     myCard.innerHTML= `
-    <p id="gunName">${gun.name}</p>
-    <div id="imgCon">
-        <img id='cardImg' src='${gun.imgMain}'></img>
-    </div>
-    <p id='barrel'>Barrel Length: ${gun.barrelLength} inches</p>
-    <p id='stock'>Stock Type: ${gun.stock}</p>
-    <p id='id'>Weapon ID: ${gun.id}</p>
-    <button id='deleteBtn' onclick="deleteCard(${gun.id})" >Delete</button>
+    
+        <p id="gunName">${gun.name}</p>
+        <div id="imgCon">
+            <img id='cardImg' src='${gun.imgMain}'></img>
+        </div>
+        <p id='barrel'>Barrel Length: ${gun.barrelLength} inches</p>
+        <p id='stock'>Stock Type: ${gun.stock}</p>
+        <p id='id'>Weapon ID: ${gun.id}</p>
+        <button id='deleteBtn' onclick="deleteCard(${gun.id})" >Delete</button>
     `
     myCardContainer.appendChild(myCard)
 }
