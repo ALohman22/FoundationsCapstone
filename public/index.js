@@ -206,12 +206,7 @@ const addGun = evt => {
 
     submitBtn.style.visibility = "hidden"
 
-    gunBench.innerHTML = ''
-
-    document.querySelector('.currentStock').classList.remove('currentStock');
-    document.querySelector('.currentBarrel').classList.remove('currentBarrel');
-    document.querySelector('.currentOptic').classList.remove('currentOptic');
-
+    
     let name = document.querySelector('#nameIn') 
     curGunObj.name = name.value
     if(curGunObj.name === ''){
@@ -222,6 +217,11 @@ const addGun = evt => {
         inputCard.innerHTML = ''
         input1.style.visibility = 'hidden'
     }
+    gunBench.innerHTML = ''
+
+    document.querySelector('.currentStock').classList.remove('currentStock');
+    document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+    document.querySelector('.currentOptic').classList.remove('currentOptic');
 }
 
 const btnLeft = document.querySelector('#left')
