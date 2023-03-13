@@ -18,12 +18,12 @@ let curGunObj = {}
 
 const barrelOpt = (stock, id) => {
 
-    let current = document.querySelectorAll('.current')
-if(current.length >= 1){
-    document.querySelector('.current').classList.remove('current');
-    document.getElementById(`${id}`).classList.add('current');
+    let currentStock = document.querySelectorAll('.currentStock')
+if(currentStock.length >= 1){
+    document.querySelector('.currentStock').classList.remove('currentStock');
+    document.getElementById(`${id}`).classList.add('currentStock');
 } else {
-    document.getElementById(`${id}`).classList.add('current');
+    document.getElementById(`${id}`).classList.add('currentStock');
 }
     
     gunBench.innerHTML = ''
@@ -203,7 +203,15 @@ const submitHandler = evt => {
 const cancelInput = evt => input1.style.visibility = 'hidden';
 
 const addGun = evt => {
+
     submitBtn.style.visibility = "hidden"
+
+    gunBench.innerHTML = ''
+
+    document.querySelector('.currentStock').classList.remove('currentStock');
+    document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+    document.querySelector('.currentOptic').classList.remove('currentOptic');
+
     let name = document.querySelector('#nameIn') 
     curGunObj.name = name.value
     if(curGunObj.name === ''){
@@ -228,17 +236,7 @@ btnRight.addEventListener('click', function(){
     
 });
 
-// const rotate = () => {    
-//     for(let i = 0; i < img.length; i++){
-//         if(window.innerWidth <= 600){
-//             img[i].setAttribute('style', 'transform: rotate(-90deg);')
-//         } else if(window.innerWidth > 600){
-//             img[i].setAttribute('style', 'transform: none;')
-//         }
-//     }
-// }
 
 submitBtn.addEventListener('click', submitHandler)
 
-// rotate()
 pullCards()

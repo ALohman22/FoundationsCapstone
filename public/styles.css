@@ -177,7 +177,7 @@ body{
 }
 
 
-.current{
+.currentStock{
     border: solid 3px yellow;
     opacity: .2;
 }
