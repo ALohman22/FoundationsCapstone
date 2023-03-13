@@ -1,7 +1,6 @@
-
+const m4 = document.getElementById('m4')
 
 const body = document.querySelector('body')
-
 const opticOpt = document.getElementById('opticOpt')
 const gunBench = document.getElementById('gunBench')
 const myCardContainer = document.querySelector('#myCardContainer')
@@ -10,6 +9,9 @@ const barrel = document.querySelector('#barrelLength')
 const mainCard = document.querySelector('#mainCard')
 const input1 = document.getElementById('input1')
 const img = document.querySelectorAll('.option') 
+
+
+
 
 
 let curGunObj = {}
@@ -27,12 +29,16 @@ const barrelOpt = (stock) => {
     }).catch(err => console.log(err))
 }
 
+
+
 const barrelCards = (barrelObj) => {
     let {imgIcon, stock, barrelLength, imgMain, optic } = barrelObj
     let barCard = document.createElement('div')
     barCard.setAttribute("id", 'barCard')
     barCard.innerHTML = `
+    <button class="imgBtn1">
     <img class='option1' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
+    </button>
     `
     barrel.appendChild(barCard)
 }
@@ -76,7 +82,9 @@ const opticCards = (optObj) => {
     let optCard = document.createElement('section')
     
     optCard.innerHTML = `
+    <button class="imgBtn2">
     <img class='option2' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
+    </button>
     `
     opticOpt.appendChild(optCard)
 
@@ -116,6 +124,7 @@ const createCard = gun => {
             <img id='cardImg' src='${gun.imgMain}'></img>
         </div>
         <p id='barrel'>Barrel Length: ${gun.barrelLength} inches</p>
+        <p id='optic'>Optic: ${gun.optic} </p>
         <p id='stock'>Stock Type: ${gun.stock}</p>
         <p id='id'>Weapon ID: ${gun.id}</p>
         <button id='deleteBtn' onclick="deleteCard(${gun.id})" >Delete</button>

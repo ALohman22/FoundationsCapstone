@@ -26,7 +26,6 @@ body{
 #submitGun{
     height: 40px;
     width: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +68,6 @@ body{
 }
 
 #gunBench{
-    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -155,45 +153,88 @@ body{
 #barCard{
     max-height: 100px;
     max-width: 155px;
-    
     width: 90%
 }
 
+.current{
+    opacity: .2;
+    border: solid 3px yellow;
+}
+
 .option{
-    max-height: 20%;
-    max-width: 90%;
-    background-color: white;
-    border: solid black 3px;
-    opacity: 1;
-}
-
-.option1{
+    height: 100%;
     width: 100%;
+}
+
+.imgBtn{
+    max-width: 90%;
+    max-height: 100px;
     background-color: white;
     border: solid black 3px;
     opacity: 1;
 }
 
-.option2{
-    
-    width: 12vw;
-    min-width: 100px;
-    margin: 5px;
-    background-color: white;
-    border: solid black 3px;
-    opacity: 1;
-}
-
-#option:hover{
+.imgBtn:hover{
     opacity: .2;
     transition: .2s ease-in-out;
     border: solid 3px yellow;
     cursor: pointer;
 }
 
-#option:focus-visible {
+.imgBtn:focus{
     border: solid 3px yellow;
-    background-color: gray;
+    opacity: .2;
+}
+
+.option1{
+    width: 100%;
+    height: 100%;  
+}
+
+.imgBtn1{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    background-color: white;
+    border: solid black 3px;
+    opacity: 1;
+}
+
+.imgBtn1:hover{
+    opacity: .2;
+    transition: .2s ease-in-out;
+    border: solid 3px yellow;
+    cursor: pointer;
+}
+
+.imgBtn1:focus{
+    border: solid 3px yellow;
+    opacity: .2;
+}
+
+
+.option2{
+    max-height: 100px;
+    max-width: 100%;
+}
+
+.imgBtn2{
+    width: 10vw;
+    background-color: white;
+    border: solid black 3px;
+    opacity: 1;
+}
+
+.imgBtn2:hover{
+    opacity: .2;
+    transition: .2s ease-in-out;
+    border: solid 3px yellow;
+    cursor: pointer;
+}
+
+.imgBtn2:focus{
+    opacity: .2;
+    border: solid 3px yellow;
 }
 
 
@@ -233,7 +274,6 @@ h2{
     width: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     overflow-y: visible;
 }
 
@@ -266,7 +306,7 @@ h2{
     background-color: rgb(54, 54, 54);
     border: 5px solid black;
     color: whitesmoke;
-    height: 70%;
+    height: 75%;
     width: 250px;
     min-width: 200px;
     scroll-behavior: smooth;
@@ -280,7 +320,7 @@ h2{
 }
 
 
-#barrel, #stock, #id{
+#barrel, #stock, #id, #optic{
     margin: 3px; 
     border-bottom: solid lightgrey 1px;
     
