@@ -16,7 +16,16 @@ const img = document.querySelectorAll('.option')
 
 let curGunObj = {}
 
-const barrelOpt = (stock) => {
+const barrelOpt = (stock, id) => {
+
+    let current = document.querySelectorAll('.current')
+if(current.length >= 1){
+    document.querySelector('.current').classList.remove('current');
+    document.getElementById(`${id}`).classList.add('current');
+} else {
+    document.getElementById(`${id}`).classList.add('current');
+}
+    
     gunBench.innerHTML = ''
     input1.innerHTML = ''
     axios.get(`/stocks/${stock}`)
@@ -32,13 +41,13 @@ const barrelOpt = (stock) => {
 
 
 const barrelCards = (barrelObj) => {
-    let {imgIcon, stock, barrelLength, imgMain, optic } = barrelObj
+ 
+
+    let {imgIcon, stock, barrelLength, imgMain, optic} = barrelObj
     let barCard = document.createElement('div')
     barCard.setAttribute("id", 'barCard')
     barCard.innerHTML = `
-    <button class="imgBtn1">
-    <img class='option1' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
-    </button>
+    <img class='option1' id='${barrelLength}' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
     `
     barrel.appendChild(barCard)
 }
@@ -48,6 +57,13 @@ const displayFirstImg = (imgMain) => {
 }
 
 const displayOptics = (barrelLength, stock, optic, imgMain) => {
+      let currentBarrel = document.querySelectorAll('.currentBarrel')
+    if(currentBarrel.length >= 1){
+        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+        document.getElementById(`${barrelLength}`).classList.add('currentBarrel');
+    } else {
+        document.getElementById(`${barrelLength}`).classList.add('currentBarrel');
+    }
     gunBench.innerHTML = ''
     input1.innerHTML = ''
     submitBtn.style.visibility = 'visible'
@@ -82,15 +98,24 @@ const opticCards = (optObj) => {
     let optCard = document.createElement('section')
     
     optCard.innerHTML = `
-    <button class="imgBtn2">
-    <img class='option2' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
-    </button>
+   
+    <img class='option2' id='${optic}' onclick="displayImg('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" src="${imgIcon}" alt="">
+    
     `
     opticOpt.appendChild(optCard)
 
 }
 
 const displayImg = (barrelLength, stock, optic, imgMain) => {
+    let currentOptic = document.querySelectorAll('.currentOptic')
+    if(currentOptic.length >= 1){
+        document.querySelector('.currentOptic').classList.remove('currentOptic');
+        document.getElementById(`${optic}`).classList.add('currentOptic');
+    } else {
+        document.getElementById(`${optic}`).classList.add('currentOptic');
+    }
+
+
     gunBench.innerHTML = ''
     input1.innerHTML = ''
     input1.style.visibility = 'hidden'
