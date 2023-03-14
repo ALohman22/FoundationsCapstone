@@ -16,10 +16,44 @@ express
 cors
 ```
 ## App functionality
-![Landing Page](public/images/LandingPage.png)
+### Landing page
+The Landing page congains the entirety of the website.
+initially it will display en empty table in the middle with stock options to choose from on the left
 
+![Landing Page](public/images/readMe/Landingpage.png)
 
+Once a stock is selected, the butten pressed will remain highlighted as refference and the barrel options will display.
 
+![Landing Page](public/images/readMe/stockSelected.png)
+
+When you select a barrel, optic options will show up as well as an image of what the current rifle looks like.
+
+![Landing Page](public/images/readMe/barrelSelected.png)
+
+you can then choose to submit the gun as is (see next step) or continue and choose an optic. both the barrel buttons and optic buttons will remain highlighted antil they are submitted or another option is chosen.
+
+![Landing Page](public/images/readMe/opticSelected.png)
+
+When you are satisfied with the product and press submit, this box will appear prompting you to name your gun. A name must be added (see warnings). once the submit button in the box is pressed all fields are cleard of markings so you can start over again.
+
+![Landing Page](public/images/readMe/addName.png)
+
+each submission created a gun card and places the card in the "My Rifles" section. the section is a carosel meaning that it will only display a few cards at a time. to cycle through the cards not on screen, all you need to do is cycle through the right or left arrow buttons on either side. the cards have a hover feature when they are moused over and each card can be deleted.
+
+![Landing Page](public/images/readMe/gunCards.png)
+
+## App warnings
+The "no stock selected" warning is desplayed when you try to add a barrel without first selecting a stock.
+
+![Landing Page](public/images/readMe/barrelWarning.png)
+
+The "No Barrel Selected" warning displays when you try and select an optic before a stock or barrel are selected.
+
+![Landing Page](public/images/readMe/opticWarning.png)
+
+The "No Name" warning is displayed when a user trys to sumbmit a rifle that hasnt been named.
+
+![Landing Page](public/images/readMe/nameWarning.png)
 
 
 ## App sources and links
