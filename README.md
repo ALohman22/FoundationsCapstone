@@ -16,7 +16,7 @@ express
 cors
 ```
 ## App functionality
-![Landing Page](images/Screenshot 2023-03-14 075257)
+![Landing Page](public/images/LandingPage.png)
 
 
 
