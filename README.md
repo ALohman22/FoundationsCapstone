@@ -20,7 +20,7 @@ cors
 The Landing page congains the entirety of the website.
 initially it will display en empty table in the middle with stock options to choose from on the left
 
-![Landing Page](public/images/readMe/Landingpage.png)
+![Landing Page](public/images/readMe/landingpage.png)
 
 Once a stock is selected, the butten pressed will remain highlighted as refference and the barrel options will display.
 
