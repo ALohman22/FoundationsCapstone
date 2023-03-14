@@ -203,22 +203,23 @@ const addGun = evt => {
     curGunObj.name = name.value
     if(curGunObj.name === ''){
         alert("Please enter a name")
+
     } else { addCard(curGunObj)
         
         name.value = ''
         inputCard.innerHTML = ''
         input1.style.visibility = 'hidden'
-    }
-    gunBench.innerHTML = ''
-    
-    let currentOptic = document.querySelectorAll('.currentOptic')
-    if(currentOptic.length >= 1){
-        document.querySelector('.currentOptic').classList.remove('currentOptic');
-        document.querySelector('.currentStock').classList.remove('currentStock');
-        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
-    } else {
-        document.querySelector('.currentStock').classList.remove('currentStock');
-        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+        gunBench.innerHTML = ''
+        
+        let currentOptic = document.querySelectorAll('.currentOptic')
+        if(currentOptic.length >= 1){
+            document.querySelector('.currentOptic').classList.remove('currentOptic');
+            document.querySelector('.currentStock').classList.remove('currentStock');
+            document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+        } else {
+            document.querySelector('.currentStock').classList.remove('currentStock');
+            document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+        }
     }
     
 }
