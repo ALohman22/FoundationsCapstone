@@ -1,23 +1,13 @@
-const m4 = document.getElementById('m4')
-
-const body = document.querySelector('body')
 const opticOpt = document.getElementById('opticOpt')
 const gunBench = document.getElementById('gunBench')
 const myCardContainer = document.querySelector('#myCardContainer')
 const submitBtn = document.querySelector('#subBtn')
 const barrel = document.querySelector('#barrelLength')
-const mainCard = document.querySelector('#mainCard')
 const input1 = document.getElementById('input1')
-const img = document.querySelectorAll('.option') 
-
-
-
-
 
 let curGunObj = {}
 
 const barrelOpt = (stock, id) => {
-
     let currentStock = document.querySelectorAll('.currentStock')
 if(currentStock.length >= 1){
     document.querySelector('.currentStock').classList.remove('currentStock');
@@ -25,7 +15,6 @@ if(currentStock.length >= 1){
 } else {
     document.getElementById(`${id}`).classList.add('currentStock');
 }
-    
     gunBench.innerHTML = ''
     input1.innerHTML = ''
     axios.get(`/stocks/${stock}`)
@@ -38,11 +27,7 @@ if(currentStock.length >= 1){
     }).catch(err => console.log(err))
 }
 
-
-
 const barrelCards = (barrelObj) => {
- 
-
     let {imgIcon, stock, barrelLength, imgMain, optic} = barrelObj
     let barCard = document.createElement('div')
     barCard.setAttribute("id", 'barCard')
@@ -50,10 +35,6 @@ const barrelCards = (barrelObj) => {
     <img class='option1' id='${barrelLength}' src="${imgIcon}" onclick="displayOptics('${barrelLength}', '${stock}', '${optic}', '${imgMain}')" alt="">
     `
     barrel.appendChild(barCard)
-}
-const displayFirstImg = (imgMain) => {
-    
-    
 }
 
 const displayOptics = (barrelLength, stock, optic, imgMain) => {
@@ -64,33 +45,39 @@ const displayOptics = (barrelLength, stock, optic, imgMain) => {
     } else {
         document.getElementById(`${barrelLength}`).classList.add('currentBarrel');
     }
-    gunBench.innerHTML = ''
-    input1.innerHTML = ''
-    submitBtn.style.visibility = 'visible'
-    let mainCard = document.createElement('div')
-    mainCard.setAttribute("id", "mainCard")
-    mainCard.innerHTML = `
-    <img id='display' src="${imgMain}" alt="myGun">
-    `
-    gunBench.appendChild(mainCard)
+    let currentStock = document.querySelectorAll('.currentStock')
+    if(currentStock.length < 1){
+        alert('Please select a stock')
+        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+    } else {
+        gunBench.innerHTML = ''
+        input1.innerHTML = ''
+        submitBtn.style.visibility = 'visible'
+        let mainCard = document.createElement('div')
+        mainCard.setAttribute("id", "mainCard")
+        mainCard.innerHTML = `
+            <img id='display' src="${imgMain}" alt="myGun">
+        `
+        gunBench.appendChild(mainCard)
     
-    curGunObj = {
-        name: '',
-        imgMain,
-        barrelLength,
-        optic,
-        stock
-    }
-    
-    axios.get(`/${stock}/${barrelLength}`)
-    .then(response=>{
-        opticOpt.innerHTML = ''
-        
-        let optArr = response.data
-        for(let i = 0; i < optArr.length; i++){
-            opticCards(optArr[i])
+        curGunObj = {
+            name: '',
+            imgMain,
+            barrelLength,
+            optic,
+            stock
         }
-    }).catch(err=> console.log(err))
+    
+        axios.get(`/${stock}/${barrelLength}`)
+        .then(response=>{
+            opticOpt.innerHTML = ''
+        
+            let optArr = response.data
+            for(let i = 0; i < optArr.length; i++){
+            opticCards(optArr[i])
+            }
+        }).catch(err=> console.log(err))
+    }
 }
 
 const opticCards = (optObj) => {
@@ -108,31 +95,36 @@ const opticCards = (optObj) => {
 
 const displayImg = (barrelLength, stock, optic, imgMain) => {
     let currentOptic = document.querySelectorAll('.currentOptic')
+    let currentStock = document.querySelectorAll('.currentStock')
     if(currentOptic.length >= 1){
         document.querySelector('.currentOptic').classList.remove('currentOptic');
         document.getElementById(`${optic}`).classList.add('currentOptic');
     } else {
         document.getElementById(`${optic}`).classList.add('currentOptic');
     }
+    if(currentStock.length < 1){
+        alert('Please select a stock and a barrel')
+        document.querySelector('.currentOptic').classList.remove('currentOptic');
+    } else {
 
-
-    gunBench.innerHTML = ''
-    input1.innerHTML = ''
-    input1.style.visibility = 'hidden'
-    submitBtn.style.visibility = 'visible'
-    let mainCard = document.createElement('div')
-    mainCard.setAttribute("id", "mainCard")
-    mainCard.innerHTML = `
-    <img id='display' src="${imgMain}" alt="myGun">
-    `
-    gunBench.appendChild(mainCard)
+        gunBench.innerHTML = ''
+        input1.innerHTML = ''
+        input1.style.visibility = 'hidden'
+        submitBtn.style.visibility = 'visible'
+        let mainCard = document.createElement('div')
+        mainCard.setAttribute("id", "mainCard")
+        mainCard.innerHTML = `
+        <img id='display' src="${imgMain}" alt="myGun">
+        `
+        gunBench.appendChild(mainCard)
     
-    curGunObj = {
-        name: '',
-        imgMain,
-        barrelLength,
-        optic,
-        stock
+        curGunObj = {
+            name: '',
+            imgMain,
+            barrelLength,
+            optic,
+            stock
+        }
     }
 }
 
@@ -218,10 +210,17 @@ const addGun = evt => {
         input1.style.visibility = 'hidden'
     }
     gunBench.innerHTML = ''
-
-    document.querySelector('.currentStock').classList.remove('currentStock');
-    document.querySelector('.currentBarrel').classList.remove('currentBarrel');
-    document.querySelector('.currentOptic').classList.remove('currentOptic');
+    
+    let currentOptic = document.querySelectorAll('.currentOptic')
+    if(currentOptic.length >= 1){
+        document.querySelector('.currentOptic').classList.remove('currentOptic');
+        document.querySelector('.currentStock').classList.remove('currentStock');
+        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+    } else {
+        document.querySelector('.currentStock').classList.remove('currentStock');
+        document.querySelector('.currentBarrel').classList.remove('currentBarrel');
+    }
+    
 }
 
 const btnLeft = document.querySelector('#left')
